@@ -36,4 +36,6 @@ yarn-error.log*
 next-env.d.ts
 
 # prisma
-/src/generated
+# Keep generated files for deployment, but ignore engine binaries
+/src/generated/prisma/*.node
+/src/generated/prisma/libquery_engine*

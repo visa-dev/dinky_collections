@@ -1,0 +1,3 @@
+# Don't ignore generated Prisma files - they're needed for deployment
+!src/generated/prisma
+
