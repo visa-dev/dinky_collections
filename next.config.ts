@@ -20,6 +20,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Ensure Prisma generated files are included in serverless functions
+  experimental: {
+    serverComponentsExternalPackages: ["@prisma/client"],
+  },
 };
 
 export default nextConfig;

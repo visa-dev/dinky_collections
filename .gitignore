@@ -36,6 +36,7 @@ yarn-error.log*
 next-env.d.ts
 
 # prisma
-# Keep generated files for deployment, but ignore engine binaries
-/src/generated/prisma/*.node
-/src/generated/prisma/libquery_engine*
+# Note: Generated Prisma files should be committed for Vercel deployment
+# The binary will be generated during Vercel build with correct target
+# Only ignore the local debian binary to reduce repo size
+/src/generated/prisma/libquery_engine-debian-openssl-3.0.x.so.node
